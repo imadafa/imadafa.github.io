@@ -1,3 +1,5 @@
+  The background color is `#000000`
+
 # Svgs Tech Club
 - *Welcome to the SVGS Tech Club's Github Repository*
 -
