@@ -4,7 +4,7 @@ function docsclick() {
 
 
   function repoclick() {
-    window.location.href = "https://github.com/imadafa/imadafa.github.io"
+    window.location.href = "https://github.com/imadafa/techclub"
   }
 
   function joinclick() {
