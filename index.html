@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700@display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">DAYS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Tech Club</h1>
+                <p id="regu">This is the offical website of the Saint Vincent Grammar School Technology Club. Where we create games and programs and work with all sorts of devices!</p>
+                <button type = "button" id="joinbtn" onclick="joinclick()">Join</button>
+            </div>
+            <div class="col">
+                <div class="card card1" onclick="docsclick()">
+                    <h5>Documentation</h5>
+                    <p>Direction to roblox studios offical engine Documentation</p>
+                </div>
+                <div class="card card2" onclick="repoclick()">
+                    <h5>GitHub</h5>
+                    <p>The github page of the tech club where all our projects are stored open source for free use!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
