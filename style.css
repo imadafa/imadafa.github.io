@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto',sans-serif;
+    
 }
 
 
@@ -15,6 +16,20 @@
     margin-right: 8%;
     box-sizing: border-box;
 }
+
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/back2.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    margin-right: 8%;
+    box-sizing: border-box;
+}
+
+
 
 .navbar{
     height: 12%;
@@ -66,6 +81,18 @@ nav ul li a{
 h1{
     color: white;
     font-size: 80px;
+    animation-duration: 1s;
+    animation-name: slideup;
+}
+
+@keyframes slideup {
+    from{
+        margin-top: 100%;
+
+    }
+    to{
+        margin-top: 0%;
+    }
 }
 
 p{
@@ -98,9 +125,9 @@ button{
 
 
 .card{
-    width: 200px;
-    height: 300px;
-    display: inline-table;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
     border-radius: 10px;
     padding: 15px;
     box-sizing: border-box;
@@ -109,20 +136,54 @@ button{
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
-    
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+
+@keyframes slidein {
+    from{
+        margin-top: 100%;
+
+    }
+    to{
+        margin-top: 0%;
+    }
 }
 
 .card1{
     background-image: url(images/Docs.png);
+    animation-duration: 4s;
+    animation-name: slidedown;
 }
 
+@keyframes slidedown {
+    from{
+        margin-bottom: 100px;
+
+    }
+    to{
+        margin-top: 0%;
+    }
+}
 
 .card2{
     background-image: url(images/github.png);
+    margin-top: 20px;
+}
+
+.card3{
+    background-image: url(images/avatar.png);
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 195px;
+    width: 300px;
+    height: 430px;
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
 
@@ -133,4 +194,495 @@ h5{
 
 .card p{
     text-shadow: 0 0 5px #000;
+   
+}
+
+
+.row2{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.row2 p{
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+    line-break: auto;
+    margin-bottom: 5px;
+    right: 10px;
+    
+}
+
+
+.row2 h1{
+    color: white;
+    font-size: 60px;
+    line-height: 30px;
+    line-break: initial;
+}
+
+
+.row3{
+    display: flex;
+    height: 70%;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+
+.lua{
+    background-image: url(images/images.png);
+}
+
+
+.C{
+    background-image: url(images/csharp.png);
+}
+
+
+/* low res*/
+@media screen and (max-width: 600px) {
+    
+    .navbar{
+        height: 9%  ;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 10px;
+        cursor: pointer;
+    }
+    
+    .menu-icon{
+        width: 40;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12;
+    
+    }
+    
+    .row{
+        display: flex;
+        height: 60%;
+        align-items: center;
+    
+    }
+    
+    .col{
+        flex-basis: 30%;
+    
+    }
+    
+    h1{
+        color: white;
+        font-size: 30px;
+        animation-duration: 1s;
+        animation-name: slideup;
+    }
+    
+    @keyframes slideup {
+        from{
+            margin-top: 100%;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    p{
+        color: white;
+        font-size: 5px;
+        line-height: 10px;
+    }
+    
+    
+    button{
+        width: 90px;
+        color: black;
+        font-size: 12px;
+        padding: 12px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 30px;
+        transition: transform 0.5s;
+    }
+    
+    .joinbtn{
+        transition: transform 0.5s;
+    }
+    
+    .joinbtn :hover{
+        transform: translateY(-30px);
+    }
+    
+    
+    .card{
+        width: 130px;
+        height: 130px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+    
+    
+    @keyframes slidein {
+        from{
+            margin-top: 100%;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    .card1{
+        background-image: url(images/Docs.png);
+        animation-duration: 4s;
+        animation-name: slidedown;
+    }
+    
+    @keyframes slidedown {
+        from{
+            margin-bottom: 100px;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    .card2{
+        background-image: url(images/github.png);
+        margin-top: 20px;
+    }
+    
+    .card3{
+        background-image: url(images/avatar.png);
+        display: block;
+        position: absolute;
+        right: 1%;
+        top: 175px;
+        width: 100px;
+        height: 300px;
+    }
+    
+    .card:hover{
+        transform: translateY(-20px);
+    }
+    
+    
+    h5{
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+    }
+    
+    .card p{
+        text-shadow: 0 0 5px #000;
+       
+    }
+    
+    
+    .row2{
+        display: flex;
+        height: 88%;
+        align-items: center;
+    
+    }
+    
+    .row2 p{
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        line-break: auto;
+        margin-bottom: 5px;
+        right: 10px;
+        
+    }
+    
+    
+    .row2 h1{
+        color: white;
+        font-size: 60px;
+        line-height: 30px;
+        line-break: initial;
+    }
+    
+    
+    .row3{
+        display: flex;
+        height: 70%;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .row2 h1{
+        font-size: 19px;
+    }
+    
+    .lua{
+        background-image: url(images/images.png);
+        width: 90px;
+        height: 90px;
+    }
+    
+    
+    .C{
+        background-image: url(images/csharp.png);
+        width: 90px;
+        height: 90px;
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+    
+    .navbar{
+        height: 9%  ;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 10px;
+        cursor: pointer;
+    }
+    
+    .menu-icon{
+        width: 40;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 12;
+    
+    }
+    
+    .row{
+        display: flex;
+        height: 60%;
+        align-items: center;
+    
+    }
+    
+    .col{
+        flex-basis: 30%;
+    
+    }
+    
+    h1{
+        color: white;
+        font-size: 30px;
+        animation-duration: 1s;
+        animation-name: slideup;
+    }
+    
+    @keyframes slideup {
+        from{
+            margin-top: 100%;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    p{
+        color: white;
+        font-size: 5px;
+        line-height: 10px;
+    }
+    
+    
+    button{
+        width: 90px;
+        color: black;
+        font-size: 12px;
+        padding: 12px 0;
+        background: #fff;
+        border: 0;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 30px;
+        transition: transform 0.5s;
+    }
+    
+    .joinbtn{
+        transition: transform 0.5s;
+    }
+    
+    .joinbtn :hover{
+        transform: translateY(-30px);
+    }
+    
+    
+    .card{
+        width: 130px;
+        height: 130px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+    
+    
+    @keyframes slidein {
+        from{
+            margin-top: 100%;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    .card1{
+        background-image: url(images/Docs.png);
+        animation-duration: 4s;
+        animation-name: slidedown;
+    }
+    
+    @keyframes slidedown {
+        from{
+            margin-bottom: 100px;
+    
+        }
+        to{
+            margin-top: 0%;
+        }
+    }
+    
+    .card2{
+        background-image: url(images/github.png);
+        margin-top: 20px;
+    }
+    
+    .card3{
+        background-image: url(images/avatar.png);
+        display: block;
+        position: absolute;
+        right: 9%;
+        left: 1%;
+        top: 105px;
+        width: 100px;
+        height: 300px;
+    }
+    
+    .card:hover{
+        transform: translateY(-20px);
+    }
+    
+    
+    h5{
+        color: #fff;
+        text-shadow: 0 0 5px #999;
+    }
+    
+    .card p{
+        text-shadow: 0 0 5px #000;
+       
+    }
+    
+    
+    .row2{
+        display: flex;
+        height: 78%;
+        align-items: top;
+    }
+    
+    .row2 p{
+        color: white;
+        font-size: 15px;
+        line-height: 20px;
+        line-break: auto;
+        margin-bottom: 5px;
+        right: 10px;
+        
+    }
+    
+    
+    .row2 h1{
+        color: white;
+        font-size: 0px;
+        line-height: 20px;
+        line-break: initial;
+    }
+    
+    
+    .row3{
+        display: flex;
+        height: 70%;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+    }
+    
+    
+    .lua{
+        background-image: url(images/images.png);
+    }
+    
+    
+    .C{
+        background-image: url(images/csharp.png);
+    }
+    
+
+
 }
